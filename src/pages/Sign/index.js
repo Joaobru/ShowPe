@@ -3,15 +3,24 @@ import Background from "../../components/Background";
 
 import { Container, Form, FormatButton } from "./styles";
 
-function Sing() {
+function Sing({ navigation }) {
   return (
     <Background>
       <Container>
         <Form>
-          <FormatButton color="#a3f7bf">Crie sua conta</FormatButton>
-          <FormatButton color="#4267b2">Continue com o Facebook</FormatButton>
-          <FormatButton color="#fa1616">Continue com o Gmail</FormatButton>
-          <FormatButton>Login</FormatButton>
+          <FormatButton
+            color="#ba0c2f"
+            onPress={() => navigation.navigate("SignUp")}
+          >
+            Crie sua conta
+          </FormatButton>
+          
+          <FormatButton
+            color="#ba0c2f"
+            onPress={() => navigation.navigate("SignIn")}
+          >
+            Login
+          </FormatButton>
         </Form>
       </Container>
     </Background>

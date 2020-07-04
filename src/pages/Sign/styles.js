@@ -1,6 +1,4 @@
-import { Platform } from "react-native";
 import styled from "styled-components/native";
-import { BaseButton } from "react-native-gesture-handler";
 import Button from "../../components/Button";
 
 
