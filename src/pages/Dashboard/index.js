@@ -29,16 +29,16 @@ function Dashboard() {
                 return null;
             }
           }}
-        ></Content>
+        />
       </Container>
     </Background>
   );
 }
 
 Dashboard.navigationOptions = {
-  title: "",
+  title: "Home",
   tabBarIcon: ({ tintColor }) => (
-    <Icon name="home-outline" size={30} color={tintColor} />
+    <Icon name="home-outline" size={25} color={tintColor} />
   ),
 };
 

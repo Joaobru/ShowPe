@@ -4,7 +4,7 @@ import { FlatList } from "react-native";
 export const Container = styled.SafeAreaView`
   flex: 1;
   align-items: stretch;
-  margin-top: 40px;
+  margin-top: 50px;
 `;
 
 export const Content = styled(FlatList).attrs({

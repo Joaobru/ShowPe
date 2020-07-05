@@ -17,7 +17,7 @@ function Payments() {
 Payments.navigationOptions = {
   title: "",
   tabBarIcon: ({ tintColor }) => (
-    <Icon name="payment" size={30} color={tintColor} />
+    <Icon name="payment" size={25} color={tintColor} />
   ),
 };
 

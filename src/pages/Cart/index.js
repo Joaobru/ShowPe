@@ -9,9 +9,9 @@ function Cart() {
 }
 
 Cart.navigationOptions = {
-  title: "",
+  title: "Carrinho",
   tabBarIcon: ({ tintColor }) => (
-    <Icon name="cart-outline" size={30} color={tintColor} />
+    <Icon name="cart-outline" size={25} color={tintColor} />
   ),
 };
 

@@ -16,24 +16,23 @@ export default (signedIn = true) =>
         Sign: createSwitchNavigator({
           SignIn,
           SignUp,
+          Menu,
+          Payments,
         }),
         App: createBottomTabNavigator(
           {
             Dashboard,
             Location,
             Evaluation,
-            Menu,
             Cart,
-            Payments,
           },
           {
             tabBarOptions: {
               keyboardHidesTabBar: true,
-              activeTintColor: "#fff",
-              inactiveTintColor: "rgba(255,255,255,0.6)",
-              showLabel: false,
+              activeTintColor: "#ba0c2f",
+              inactiveTintColor: "rgba(0,0,0,0.6)",
               style: {
-                backgroundColor: "#ba0c2f",
+                backgroundColor: "#f5f5f5",
               },
             },
           }
