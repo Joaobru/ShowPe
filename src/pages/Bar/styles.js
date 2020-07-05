@@ -96,7 +96,7 @@ export const Footer = styled(BaseButton)`
   color: #fff;
   flex-direction: row;
   align-items: center;
-  height: 45px;
+  height: 55px;
 `;
 
 export const Pagar = styled.View`

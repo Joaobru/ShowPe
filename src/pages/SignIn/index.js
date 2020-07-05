@@ -20,8 +20,6 @@ function SignIn({ navigation }) {
         <ImageS source={logo} />
 
         <Form>
-          <FormatButton color="#4267b2">Continue com o Facebook</FormatButton>
-          <FormatButton color="#fa1616">Continue com o Gmail</FormatButton>
           <FormInput
             icon="mail-outline"
             keyboardType="email-address"
@@ -37,7 +35,7 @@ function SignIn({ navigation }) {
             placeholder="Senha"
           />
 
-          <SubmitButton color="#ba0c2f" onPress={() => {}}>
+          <SubmitButton color="#ba0c2f" onPress={() => navigation.navigate("Dashboard")}>
             Acessar
           </SubmitButton>
           <SignLink onPress={() => navigation.navigate("SignUp")}>

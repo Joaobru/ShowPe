@@ -10,7 +10,7 @@ import Cart from "./pages/Cart";
 import Payments from "./pages/Payments";
 import Bar from "./pages/Bar";
 
-export default (signedIn = true) =>
+export default (signedIn = false) =>
   createAppContainer(
     createSwitchNavigator(
       {
@@ -40,6 +40,6 @@ export default (signedIn = true) =>
           }
         ),
       },
-      { initialRouteName: signedIn ? "App" : "Sign" }
+      { initialRouteName: "Sign" }
     )
   );

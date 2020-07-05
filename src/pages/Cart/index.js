@@ -1,51 +1,99 @@
 import React from "react";
+import { Text } from "react-native";
 import Icon from "react-native-vector-icons/MaterialCommunityIcons";
-import { Text, Image, View } from "react-native";
-import Box from '../../components/Box'
-import {Produtos} from '../../assets/dados/Produtos';
-import { Flat,Container, Button, BarImage, ContentBox, TitleProd, Title, ContentPag,TitlePag,Content} from './styles';
-import Background from '../../components/Background';
+import IconF from "react-native-vector-icons/Fontisto";
+import Box from "../../components/Box";
+import { Produtos } from "../../assets/dados/Produtos";
+import {
+  Flat,
+  Container,
+  Button,
+  BarImage,
+  TitleProd,
+  TitleValor,
+  Title,
+  ContentPag,
+  TitlePag,
+  Content,
+  TitlePrincipal,
+  Icone,
+  TitleSecundario,
+  Info,
+  Pagamento,
+  CartoesCadastrados,
+  NumeracaoCard,
+  TextTrocar,
+  IconeF,
+  NotaFiscal,
+  Cpf,
+  TitleNF,
+} from "./styles";
 
+import ButtonInput from "../../components/Button";
+import Background from "../../components/Background";
 
-function Cart({navigation}) {
-  return(
+function Cart({ navigation }) {
+  return (
     <Background>
       <Container>
         <Content>
-      <Flat
-      data={Produtos}
-      keyExtractor={(item) => String(item.id)}
-      horizontal
-      pagingEnabled
-      scrollEnabled
-      snapToAlignment="center"
-      scrollEventThrottle={16}
-      decelerationRate={"fast"}
-      showsHorizontalScrollIndicator={false}
-      renderItem={({ item }) => {
-        return(
-          <Button>
-            <ContentBox>
-              <BarImage source={{ uri: item.url }}/>
-              <Title>{item.title}</Title>
-              <Title>{item.valor}</Title>
-            </ContentBox>
-          </Button>
-        );
-      }}/>
+          <TitlePrincipal>Pedidos entregues</TitlePrincipal>
+          <Flat
+            data={Produtos}
+            keyExtractor={(item) => String(item.id)}
+            horizontal
+            pagingEnabled
+            scrollEnabled
+            snapToAlignment="center"
+            scrollEventThrottle={16}
+            decelerationRate={"fast"}
+            showsHorizontalScrollIndicator={false}
+            renderItem={({ item }) => {
+              return (
+                <Button>
+                  <BarImage source={{ uri: item.url }} />
+                  <Title>{item.title}</Title>
+                  <TitleValor>{item.valor}</TitleValor>
+                </Button>
+              );
+            }}
+          />
+          <TitleSecundario>Informações Sobre o Bar</TitleSecundario>
           <Box>
-            <Title>Bar: Bar Do Beto</Title>
-            <Title>Endereço: Rua Das Flores n ° 90</Title>
-            <Title>Nome: João Paulo</Title>
-            <Title>CPF: 999.999.999-99</Title>
+            <Info>Bar: Bar Do Beto</Info>
+            <Info>Endereço: Rua Das Flores n ° 90</Info>
+            <Info>Proprietário: João Paulo</Info>
+            <Info>CPNJ: 00.000.000/0000-00</Info>
           </Box>
-          </Content>
-          <Button>
-            <ContentPag>
-              <TitleProd>Total: R$16.50</TitleProd>
-              <TitlePag><Icon name="cart-outline" size={20} />(3)</TitlePag>
-            </ContentPag>
-          </Button>
+
+          <TitleSecundario>Pagamento</TitleSecundario>
+          <Pagamento>
+            <CartoesCadastrados>
+              <Title>Cartão Mastro</Title>
+              <NumeracaoCard>Cartão Mastro **** 9706</NumeracaoCard>
+              <IconeF>
+                <IconF name="mastercard" size={20} color="#000" />
+              </IconeF>
+              <TextTrocar>Trocar</TextTrocar>
+            </CartoesCadastrados>
+            <NotaFiscal>
+              <TitleNF>CPF/CNPJ na nota</TitleNF>
+              <Cpf>99.999.999-56</Cpf>
+              <TextTrocar>Trocar</TextTrocar>
+            </NotaFiscal>
+
+            <ButtonInput color="#79d70f">
+              <Text>Fechar a Conta</Text>
+            </ButtonInput>
+          </Pagamento>
+        </Content>
+        <ContentPag>
+          <TitleProd>Total: R$ 16.50</TitleProd>
+          <Icone>
+            <Icon name="cart-outline" size={25} color="#fff" />
+            <TitlePag>(3)</TitlePag>
+          </Icone>
+        </ContentPag>
       </Container>
     </Background>
   );

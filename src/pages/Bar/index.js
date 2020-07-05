@@ -43,7 +43,7 @@ function Bar({ navigation }) {
           </Voltar>
         </Topo>
         <Body>
-          <NameBar>Bar do Beto</NameBar>
+          <NameBar>Produtos</NameBar>
           <TitlePrincipal>Bebidas</TitlePrincipal>
           <Content
             data={Bebidas}

@@ -18,15 +18,6 @@ export const Flat = styled(FlatList).attrs({
   },
 })``;
 
-export const ContentBox = styled.View`
-  flex-direction: row;
-  align-items: center;
-  margin: 5px 0;
-  padding: 20px;
-  background: #ddd;
-  border-radius: 4px;
-`;
-
 export const BarImage = styled.Image`
   border-radius: 25px;
   width: 50px;
@@ -36,13 +27,25 @@ export const BarImage = styled.Image`
 
 export const Button = styled(BaseButton)`
   border: 0;
+  border: 0;
+  flex-direction: row;
+  align-items: center;
+  margin: 5px 0;
+  padding: 20px;
+  background: #ddd;
+  border-radius: 4px;
 `;
 export const TitleBar = styled.Text`
   margin-left: 15px;
+  font-weight: bold;
 `;
 export const Title = styled.Text`
-  font-size: 15pt;
+  font-size: 15px;
 `;
 export const Icone = styled.Text`
-  margin-left: 52%;
+  position: absolute;
+  right: 15px;
+  flex: 1;
+  border-bottom-left-radius: 35px;
+  border-bottom-right-radius: 35px;
 `;

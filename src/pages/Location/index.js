@@ -11,11 +11,12 @@ import {
   Button,
   Recentes,
   BoxRecente,
-  TitlePrincipal
+  TitlePrincipal,
 } from "./styles";
 import { Bar } from "../../assets/dados/Bar";
+import HeartOutline from "../Evaluation/Button";
 
-export default function Location({navigation}) {
+export default function Location({ navigation }) {
   return (
     <Background>
       <Container>
@@ -41,9 +42,10 @@ export default function Location({navigation}) {
           keyExtractor={(item) => String(item.id)}
           renderItem={({ item }) => {
             return (
-              <Button onPress={() => navigation.navigate('Bar')}>
+              <Button onPress={() => navigation.navigate("Bar", item)}>
                 <BarImage source={{ uri: item.url }} />
                 <Title>{item.title}</Title>
+                <HeartOutline />
               </Button>
             );
           }}
