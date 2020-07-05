@@ -5,7 +5,6 @@ export const ContentBox = styled.View`
   margin-bottom: 10px;
   padding: 50px;
   display: flex;
-  flex-direction: column;
   border-radius: 16px;
   align-items: center;
   justify-content: center;
