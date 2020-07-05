@@ -1,14 +1,20 @@
-import React, { forwardRef } from "react";
+import React from "react";
 import Icon from "react-native-vector-icons/MaterialIcons";
 import PropTypes from "prop-types";
 
 import { Container, TInput } from "./styles";
 
-function Input({ style, icon, ...rest }, ref) {
+function Input({ style, icon, color, size, ...rest }, ref) {
   return (
     <Container style={style}>
-      {icon && <Icon name={icon} size={20} color="rgba(0,0,0,0.3)" />}
-      <TInput {...rest} ref={ref} />
+      {icon && (
+        <Icon
+          name={icon}
+          size={size ? size : 20}
+          color={color ? color : "rgba(0,0,0,0.3)"}
+        />
+      )}
+      <TInput {...rest} />
     </Container>
   );
 }
@@ -23,4 +29,4 @@ Input.defaultProps = {
   style: {},
 };
 
-export default forwardRef(Input);
+export default Input;

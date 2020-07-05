@@ -1,10 +1,15 @@
-import styled from "styled-components/native";
+import styled from 'styled-components/native';
+import Input from "../../components/Input";
 import { FlatList } from "react-native";
+
 
 export const Container = styled.SafeAreaView`
   flex: 1;
-  align-items: stretch;
-  margin-top: 50px;
+  margin: 50px 10px;
+`;
+
+export const Search = styled(Input)`
+  margin-bottom: 20px;
 `;
 
 export const Content = styled(FlatList).attrs({

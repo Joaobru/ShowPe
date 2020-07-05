@@ -9,9 +9,9 @@ function Evaluation() {
 }
 
 Evaluation.navigationOptions = {
-  title: "",
+  title: "Favoritos",
   tabBarIcon: ({ tintColor }) => (
-    <Icon name="heart-outline" size={30} color={tintColor} />
+    <Icon name="heart-outline" size={25} color={tintColor} />
   ),
 };
 export default Evaluation;
