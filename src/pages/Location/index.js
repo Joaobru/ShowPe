@@ -1,6 +1,6 @@
 import React from "react";
 import { View } from "react-native";
-import Icon from "react-native-vector-icons/MaterialCommunityIcons";
+import Icon from "react-native-vector-icons/MaterialIcons";
 
 // import { Container } from './styles';
 
@@ -8,10 +8,10 @@ function Location() {
   return <View />;
 }
 
-navigationOptions = {
-  title: "",
+Location.navigationOptions = {
+  title: '',
   tabBarIcon: ({ tintColor }) => (
-    <Icon name="home-outline" size={20} color={tintColor} />
+    <Icon name="location-on" size={30} color={tintColor} />
   ),
 };
 
