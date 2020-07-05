@@ -11,6 +11,7 @@ export const Container = styled.View`
 export const Text = styled.Text`
   font-weight: bold;
   padding: 10px;
+  align-self: stretch;
 `;
 
 export const Title = styled.Text`

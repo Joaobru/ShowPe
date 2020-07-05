@@ -2,7 +2,6 @@ import styled from "styled-components/native";
 import Input from "../../components/Input";
 import { FlatList } from "react-native";
 import { BaseButton } from "react-native-gesture-handler";
-import Box from "../../components/Box";
 
 export const Container = styled.SafeAreaView`
   flex: 1;
@@ -23,7 +22,19 @@ export const Content = styled(FlatList).attrs({
   },
 })``;
 
-export const ContentBox = styled.View`
+export const BarImage = styled.Image`
+  border-radius: 25px;
+  width: 50px;
+  height: 50px;
+`;
+
+export const Title = styled.Text`
+  margin-left: 15px;
+  font-weight: bold;
+`;
+
+export const Button = styled(BaseButton)`
+  border: 0;
   flex-direction: row;
   align-items: center;
   margin: 5px 0;
@@ -32,17 +43,21 @@ export const ContentBox = styled.View`
   border-radius: 4px;
 `;
 
-export const BarImage = styled.Image`
-  border-radius: 25px;
-  width: 50px;
-  height: 50px;
-  border: 2px solid #fff;
-`;
-
-export const Title = styled.Text`
-  margin-left: 15px;
-`;
-
-export const Button = styled(BaseButton)`
+export const BoxRecente = styled(BaseButton)`
   border: 0;
+  padding: 15px;
+  flex-direction: row;
+`;
+
+export const Recentes = styled.View`
+  margin-bottom: 20px;
+  border-color: #333;
+  opacity: 0.4;
+`;
+
+export const TitlePrincipal = styled.Text`
+  font-weight: bold;
+  margin-left: 15px;
+  font-size: 18px;
+  margin-bottom: 5px;
 `;

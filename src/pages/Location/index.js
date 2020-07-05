@@ -9,24 +9,41 @@ import {
   BarImage,
   Title,
   Button,
+  Recentes,
+  BoxRecente,
+  TitlePrincipal
 } from "./styles";
 import { Bar } from "../../assets/dados/Bar";
 
-export default function Location() {
+export default function Location({navigation}) {
   return (
     <Background>
       <Container>
         <Search size={25} icon="search" color="#ba0c2f" />
+        <TitlePrincipal>Buscas Recentes:</TitlePrincipal>
+        <Recentes>
+          <BoxRecente>
+            <Icon name="history" size={25} color="#000" />
+            <Title>Bar do Bruno</Title>
+          </BoxRecente>
+          <BoxRecente>
+            <Icon name="history" size={25} color="#000" />
+            <Title>Bar do João</Title>
+          </BoxRecente>
+          <BoxRecente>
+            <Icon name="history" size={25} color="#000" />
+            <Title>Rock Bar</Title>
+          </BoxRecente>
+        </Recentes>
+        <TitlePrincipal>Bares próximos a você:</TitlePrincipal>
         <Content
           data={Bar}
           keyExtractor={(item) => String(item.id)}
           renderItem={({ item }) => {
             return (
-              <Button>
-                <ContentBox>
-                  <BarImage source={{ uri: item.url }} />
-                  <Title>{item.title}</Title>
-                </ContentBox>
+              <Button onPress={() => navigation.navigate('Bar')}>
+                <BarImage source={{ uri: item.url }} />
+                <Title>{item.title}</Title>
               </Button>
             );
           }}

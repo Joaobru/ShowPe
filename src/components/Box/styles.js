@@ -5,7 +5,7 @@ export const ContentBox = styled.View`
   margin-bottom: 10px;
   padding: 50px;
   display: flex;
-  border-radius: 16px;
+  border-radius: 4px;
   align-items: center;
   justify-content: center;
   background: ${(props) => (props.color ? props.color : "#ededed")};

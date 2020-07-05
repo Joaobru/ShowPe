@@ -6,9 +6,10 @@ import SignUp from "./pages/SignUp";
 import Dashboard from "./pages/Dashboard";
 import Location from "./pages/Location";
 import Evaluation from "./pages/Evaluation";
-import Menu from "./pages/Menu";
 import Cart from "./pages/Cart";
 import Payments from "./pages/Payments";
+import Bar from "./pages/Bar";
+
 export default (signedIn = true) =>
   createAppContainer(
     createSwitchNavigator(
@@ -16,9 +17,10 @@ export default (signedIn = true) =>
         Sign: createSwitchNavigator({
           SignIn,
           SignUp,
-          Menu,
           Payments,
-        }),
+          Bar,
+        }
+        ),
         App: createBottomTabNavigator(
           {
             Dashboard,
