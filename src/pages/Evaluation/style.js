@@ -44,5 +44,5 @@ export const Title = styled.Text`
   font-size: 15pt;
 `;
 export const Icone = styled.Text`
-  margin-left: 52%;
+  margin-left: 55%;
 `;
