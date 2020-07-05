@@ -1,10 +1,18 @@
 import React from "react";
-import { View } from "react-native";
-
-// import { Container } from './styles';
+import Box from "../../../components/Box";
+import Icon from "react-native-vector-icons/AntDesign";
+import { Container, Title, Text } from "./styles";
 
 function Pontos() {
-  return <View />;
+  return (
+    <Box size={200}>
+      <Title>Seus Pontos:</Title>
+      <Container>
+        <Icon name="star" size={50} color="#ffcd3c" />
+        <Text>9000</Text>
+      </Container>
+    </Box>
+  );
 }
 
 export default Pontos;
