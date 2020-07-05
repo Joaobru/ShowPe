@@ -11,7 +11,7 @@ export const Container = styled.SafeAreaView`
 export const Flat = styled(FlatList).attrs({
   showsVerticalScrollIndicator: false,
   contentContainerStyle: {
-    marginBottom: 0,
+    marginBottom: 40,
     marginTop: 0,
     marginLeft: 10,
     marginRight: 10,
@@ -22,9 +22,11 @@ export const ContentBox = styled.View`
   flex-direction: row;
   align-items: center;
   margin: 5px 0;
+  margin-left:15px;
   padding: 20px;
   background: #ddd;
   border-radius: 4px;
+  height:100px;
 `;
 export const ContentPag = styled.View`
   flex-direction: row;
@@ -46,15 +48,19 @@ export const Button = styled(BaseButton)`
   border: 0;
 `;
 export const TitleProd = styled.Text`
-  font-size:18pt;
+  font-size:16pt;
   margin-left:10px;
   color:white;
 `;
 export const Title = styled.Text`
   margin-left: 15px;
+  font-size: 14pt;
 `;
 export const TitlePag = styled.Text`
-  margin-left: 40%;
+  margin-left: 35%;
   font-size:18pt;
   color:white;
+`;
+export const Content = styled.ScrollView`
+  flex:1;
 `;
