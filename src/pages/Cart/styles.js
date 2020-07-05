@@ -26,6 +26,14 @@ export const ContentBox = styled.View`
   background: #ddd;
   border-radius: 4px;
 `;
+export const ContentPag = styled.View`
+  flex-direction: row;
+  align-items: center;
+  margin: 5px 0;
+  padding: 20px;
+  background: #ba0c2f;
+  border-radius: 4px;
+`;
 
 export const BarImage = styled.Image`
   border-radius: 25px;
@@ -37,12 +45,16 @@ export const BarImage = styled.Image`
 export const Button = styled(BaseButton)`
   border: 0;
 `;
-export const TitleBar = styled.Text`
-  margin-left: 15px;
+export const TitleProd = styled.Text`
+  font-size:18pt;
+  margin-left:10px;
+  color:white;
 `;
 export const Title = styled.Text`
-  font-size: 15pt;
+  margin-left: 15px;
 `;
-export const Icone = styled.Text`
-  margin-left: 52%;
+export const TitlePag = styled.Text`
+  margin-left: 40%;
+  font-size:18pt;
+  color:white;
 `;
