@@ -1,6 +1,5 @@
 import React from "react";
 import Background from "../../components/Background";
-
 import logo from "../../assets/img/beer.png";
 
 import {
@@ -20,8 +19,6 @@ function SignUp({ navigation }) {
       <Container>
         <ImageS source={logo} />
         <Form>
-          <FormatButton color="#4267b2">Continue com o Facebook</FormatButton>
-          <FormatButton color="#fa1616">Continue com o Gmail</FormatButton>
           <FormInput
             icon="person-outline"
             autoCorrect={false}
@@ -43,7 +40,10 @@ function SignUp({ navigation }) {
             placeholder="Senha"
           />
 
-          <SubmitButton color="#ba0c2f" onPress={() => {}}>
+          <SubmitButton
+            color="#ba0c2f"
+            onPress={() => navigation.navigate("Dashboard")}
+          >
             Cadastrar
           </SubmitButton>
           <SignLink onPress={() => navigation.navigate("SignIn")}>

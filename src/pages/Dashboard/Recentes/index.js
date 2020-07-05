@@ -1,19 +1,36 @@
 import React from "react";
 import Icon from "react-native-vector-icons/FontAwesome5";
 
-import Box from "../../../components/Box";
 
-import { Container, Text, Title } from "./styles";
+import { RecentesInfo } from "../../../assets/dados/RecentesInfo";
+
+import { Container, Text, Title, Button, Flat, Box } from "./styles";
 
 function Recentes() {
   return (
     <Box size={200}>
-      <Title>Recentes:</Title>
+      <Title>Recentes</Title>
       <Container>
-        <Text>
-          Você ainda não frequentou nenhum bar...
-          <Icon name="sad-cry" size={15} color="black" />
-        </Text>
+        <Flat
+          data={RecentesInfo}
+          keyExtractor={(item) => String(item.id)}
+          horizontal
+          pagingEnabled
+          scrollEnabled
+          snapToAlignment="center"
+          scrollEventThrottle={16}
+          decelerationRate={"fast"}
+          showsHorizontalScrollIndicator={false}
+          renderItem={({ item }) => {
+            return (
+              <Button>
+                <Text>{item.bar}</Text>
+                <Text>{item.endereco}</Text>
+                <Text>{item.total}</Text>
+              </Button>
+            );
+          }}
+        />
       </Container>
     </Box>
   );

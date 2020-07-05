@@ -29,7 +29,6 @@ export const SubmitButton = styled(Button)`
 `;
 export const SignLink = styled.TouchableOpacity`
   margin-top: 20px;
-  text-align: center;
 `;
 export const SignLinkText = styled.Text`
   color: #333;

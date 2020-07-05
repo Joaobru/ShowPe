@@ -6,19 +6,21 @@ import SignUp from "./pages/SignUp";
 import Dashboard from "./pages/Dashboard";
 import Location from "./pages/Location";
 import Evaluation from "./pages/Evaluation";
-import Menu from "./pages/Menu";
 import Cart from "./pages/Cart";
 import Payments from "./pages/Payments";
-export default (signedIn = true) =>
+import Bar from "./pages/Bar";
+
+export default (signedIn = false) =>
   createAppContainer(
     createSwitchNavigator(
       {
         Sign: createSwitchNavigator({
           SignIn,
           SignUp,
-          Menu,
           Payments,
-        }),
+          Bar,
+        }
+        ),
         App: createBottomTabNavigator(
           {
             Dashboard,
@@ -38,6 +40,6 @@ export default (signedIn = true) =>
           }
         ),
       },
-      { initialRouteName: signedIn ? "App" : "Sign" }
+      { initialRouteName: "Sign" }
     )
   );
