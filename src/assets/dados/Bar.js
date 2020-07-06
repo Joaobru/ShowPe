@@ -9,7 +9,7 @@ export const Bar = [
   {
     title: "Bar do zé",
     url:
-      "https://lh3.googleusercontent.com/proxy/huX7ITuhvFHRIGstN-9TbI7lBKHrZRuDQ0-9oO0IHblvtNRLCg-smyS827P3KWqRskNoM-mrADOoPpbl6GC8VFprPpVZr3J2Uhib6t7JTidpUNQpmqr0XA1o",
+      "https://www.baressp.com.br/bares/fotos2/seu-domingos-baressp-2-min.jpg",
     description:
       "Todos os nossos pratos acima de R$70,00 adicionam 1 bebida grátis a sua mesa",
     id: 2,

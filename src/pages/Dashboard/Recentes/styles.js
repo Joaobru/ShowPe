@@ -12,8 +12,8 @@ export const Flat = styled(FlatList).attrs({
   contentContainerStyle: {
     marginBottom: 40,
     marginTop: 0,
-    marginLeft: 10,
-    marginRight: 10,
+    marginLeft: 0,
+    marginRight: 0,
   },
 })``;
 export const Text = styled.Text`
@@ -29,7 +29,6 @@ export const Button = styled(BaseButton)`
   align-items: center;
   border-radius: 4px;
   width: 300px;
-  margin: 5px 15px;
   padding:20px;
   background:#ccc;
 `;
