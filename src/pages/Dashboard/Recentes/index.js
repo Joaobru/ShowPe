@@ -9,7 +9,7 @@ import { Container, Text, Title, Button, Flat, Box } from "./styles";
 function Recentes() {
   return (
     <Box size={200}>
-      <Title>Recentes</Title>
+      <Title>Recentes:</Title>
       <Container>
         <Flat
           data={RecentesInfo}

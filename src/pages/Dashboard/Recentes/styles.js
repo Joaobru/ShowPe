@@ -4,10 +4,7 @@ import { BaseButton } from "react-native-gesture-handler";
 
 export const Container = styled.View`
   flex: 1;
-  width: 100%;
   margin: 0;
-  justify-content: center;
-  align-items: center;
 `;
 export const Flat = styled(FlatList).attrs({
   showsVerticalScrollIndicator: false,
@@ -21,21 +18,18 @@ export const Flat = styled(FlatList).attrs({
 })``;
 export const Text = styled.Text`
   font-weight: bold;
-  font-size:20px;
-  color: black;
-  align-items: center;
+  font-size:16px;
 `;
 
 export const Title = styled.Text`
   font-weight: bold;
-  font-size: 25px;
+  font-size: 20px;
 `;
 export const Button = styled(BaseButton)`
   align-items: center;
   border-radius: 4px;
-  height: 100px;
-  align-self:stretch;
-  margin:20px;
+  width: 300px;
+  margin: 5px 15px;
   padding:20px;
   background:#ccc;
 `;

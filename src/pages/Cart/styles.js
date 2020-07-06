@@ -52,7 +52,6 @@ export const TitleProd = styled.Text`
   font-weight: bold;
 `;
 export const Title = styled.Text`
-  margin-left: 5px;
   font-size: 18px;
   font-weight: bold;
 `;
@@ -146,12 +145,12 @@ export const NotaFiscal = styled.View`
 export const TitleNF = styled.Text`
   font-weight: bold;
   position: absolute;
-  margin-left: 5px;
+  margin-left: 10px;
   font-size: 18px;
   top: 0;
 `;
 export const Cpf = styled.Text`
   margin-top: 15px;
   opacity: 0.6;
-  margin-left: 15px;
+  margin-left: 10px;
 `;

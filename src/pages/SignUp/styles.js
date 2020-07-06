@@ -4,8 +4,8 @@ import Button from "../../components/Button";
 import Input from "../../components/Input";
 
 export const ImageS = styled.Image`
-  height: 100px;
-  width: 100px;
+  height: 150px;
+  width: 300px;
 `;
 
 export const Container = styled.KeyboardAvoidingView.attrs({

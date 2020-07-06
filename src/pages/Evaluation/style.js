@@ -46,6 +46,4 @@ export const Icone = styled.Text`
   position: absolute;
   right: 15px;
   flex: 1;
-  border-bottom-left-radius: 35px;
-  border-bottom-right-radius: 35px;
 `;

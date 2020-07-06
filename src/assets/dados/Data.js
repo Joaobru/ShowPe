@@ -1,7 +1,7 @@
 export const Data = [
   {
     title: "50TOU",
-    url: "https://neofeed.com.br/wp-content/uploads/2019/10/ambev.jpg",
+    url: "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQThQNqgiVfRbOHXs1WkHxuufD57Ze7nZnu1Q&usqp=CAU",
     description:
       "Em qualquer bar deste aplicativo todos os produtos da ambev com 50% de desconto! Vai perder essa?",
     id: 1,

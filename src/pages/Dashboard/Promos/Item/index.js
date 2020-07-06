@@ -42,7 +42,7 @@ const styled = StyleSheet.create({
     borderRadius: 10,
   },
   itemTitle: {
-    color: "#ededed",
+    color: "#eee",
     fontSize: 22,
     marginBottom: 5,
     fontWeight: "bold",

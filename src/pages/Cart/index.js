@@ -82,7 +82,7 @@ function Cart({ navigation }) {
               <TextTrocar>Trocar</TextTrocar>
             </NotaFiscal>
 
-            <ButtonInput color="#79d70f">
+            <ButtonInput>
               <Text>Fechar a Conta</Text>
             </ButtonInput>
           </Pagamento>

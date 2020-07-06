@@ -1,9 +1,9 @@
 {
-  "name": "hack",
-  "displayName": "hack",
+  "name": "ShowPe",
+  "displayName": "ShowPe",
   "expo": {
-    "name": "hack",
-    "slug": "hack",
+    "name": "ShowPe",
+    "slug": "Showé",
     "version": "1.0.0",
     "assetBundlePatterns": [
       "**/*"
