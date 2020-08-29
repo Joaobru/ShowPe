@@ -60,7 +60,7 @@
         <img alt="Favoritos" title="Favoritos" width="580" src="assets/favoritos.jpg">
       </td>
       <td>
-        <img alt="Carrinho" title="Carrinho" width="580" src="assets/carrinho.jpg">
+        <img alt="Carrinho" title="Carrinho" width="580" src="assets/carrinho.png">
     </td>
     </tr>
   </table>
