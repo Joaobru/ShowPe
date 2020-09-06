@@ -76,7 +76,7 @@
   no seu celular, quando você rodar a aplicação Mobile com o comando yarn
   web, o seu navegador irá abrir mostrando um QrCode, abra o Expo no seu
   celular, e clique na opção "Scan QR Code", aponte a câmera para o QrCode
-  e aproveite para fazer testes no Proffy. 
+  e aproveite para fazer testes no ShowPe. 
 
 ## Tecnologias
 
