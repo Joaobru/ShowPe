@@ -84,8 +84,7 @@ $ cd ShowPe-master
 # Execute o comando para instalar todas as dependências
 $ npm install ou yarn
 
-# Execute a aplicação em modo de desenvolvimento, é importante executar este
-# comando primeiro no server depois no web ou mobile
+# Execute a aplicação em modo de desenvolvimento
 $ npm start ou yarn start
 
 
