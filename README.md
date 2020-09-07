@@ -90,7 +90,8 @@ $ npm start ou yarn start
 
 
 # Para rodar a aplicação é preciso instalar o Expo no seu celular, quando você
-# rodar a aplicação com o comando yarn start, o seu navegador irá abrir mostrando # um QrCode, abra o Expo no seu celular, e clique na opção "Scan QR Code", 
+# rodar a aplicação com o comando yarn start, o seu navegador irá abrir mostrando 
+# um QrCode, abra o Expo no seu celular, e clique na opção "Scan QR Code", 
 # aponte a câmera para o QrCode e aproveite para fazer testes no ShowPe
 
 ```
