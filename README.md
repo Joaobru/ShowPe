@@ -6,7 +6,7 @@
   A aplicação foi desenvolvida para o desafio da Ambev, do Mega Hack 3.0 da Shawee, o aplicativo permite que o usuário consiga procurar bares próximos a ele, com boas avaliações e promoções direcionados a produtos da Ambev. Além de poder fazer seu pedido via aplicativo, podendo pagar a conta por app também, viabilizando um tempo menor de espera dentro do bar.
 </p>
 
-## Aplicação
+## :iphone: Aplicação
 
   <table>
     <tr>
@@ -65,24 +65,40 @@
     </tr>
   </table>
 
-## Para rodar a aplicação
+## :wrench: Pré-requisitos
 
-  * A primeira coisa é executar o comando yarn ou npm install,
-  para instalar todas as dependencias necessárias.
+ Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
+[Git](https://git-scm.com), [Node.js](https://nodejs.org/en/) e o [Expo](https://expo.io/). . 
+Além disto é bom ter um editor para trabalhar com o código como o [VSCode](https://code.visualstudio.com/)
 
-  * Após a execução do comando yarn ou npm install efetue yarn web.
+## :rocket: Para rodar a aplicação
 
-  * Para rodar a aplicação mobile é preciso instalar o Expo 
-  no seu celular, quando você rodar a aplicação Mobile com o comando yarn
-  web, o seu navegador irá abrir mostrando um QrCode, abra o Expo no seu
-  celular, e clique na opção "Scan QR Code", aponte a câmera para o QrCode
-  e aproveite para fazer testes no ShowPe. 
+```bash
 
-## Tecnologias
+# Clone este repositório
+$ git clone https://github.com/Joaobru/ShowPe.git
 
-  * React-Native (Mobile Front-End);
+# Acesse a pasta do projeto no seu terminal/cmd
+$ cd ShowPe-master
 
-  * Styled Components (Usado para estilizar os componentes).
+# Execute o comando para instalar todas as dependências
+$ npm install ou yarn
+
+# Execute a aplicação em modo de desenvolvimento, é importante executar este
+# comando primeiro no server depois no web ou mobile
+$ npm start ou yarn start
+
+
+# Para rodar a aplicação é preciso instalar o Expo no seu celular, quando você
+# rodar a aplicação com o comando yarn start, o seu navegador irá abrir mostrando # um QrCode, abra o Expo no seu celular, e clique na opção "Scan QR Code", 
+# aponte a câmera para o QrCode e aproveite para fazer testes no ShowPe
+
+```
+## 🛠 Tecnologias
+
+ * [React-Native](https://reactnative.dev/) (Mobile Front-End);
+
+ * [Styled Components](https://styled-components.com/) (Usado para estilizar os componentes).
 
 
 
